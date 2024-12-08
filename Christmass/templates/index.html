@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Christmas Tree</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        #tree {
+            width: 300px;
+            height: 400px;
+            background-image: url('/static/Transparent Xmas Tree PNG Clipart.jpg');
+            background-size: cover;
+            position: relative;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="tree"></div>
+    <audio id="song" src="/static/christmas-dreams-jingle-bells-268299.mp3"></audio>
+    <script>
+        document.getElementById('tree').addEventListener('click', function () {
+            document.getElementById('song').play();
+        });
+    </script>
+</body>
+</html>
